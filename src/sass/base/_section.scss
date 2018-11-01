@@ -1,0 +1,73 @@
+section {
+    position: relative;
+}
+
+.section-title {
+    position: relative;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        @extend %decor-cross;
+    }
+}
+
+.social-list {
+    margin-bottom: 0;
+
+    &-item {
+
+        svg {
+            fill: #fff;
+        }
+
+        &--facebook {
+            background: #4e54cc;
+
+            svg {
+                fill: #4e54cc;
+            }
+        }
+        
+        &--instagram {
+
+            svg {
+                fill: rgb(152,42,143);
+            }
+        }
+
+        &--youtube {
+
+            svg {
+                fill: #ed1c24;
+            }
+        }
+    }
+}
+
+.simple-list {
+    margin-bottom: 0;
+
+    &-item {
+        position: relative;
+        margin-bottom: 30px;
+        padding-left: 50px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 30px;
+            height: 30px;
+            background: url('../images/icon/decor/simple-list-decor.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+}

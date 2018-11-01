@@ -1,0 +1,15 @@
+@import "config/variables";
+@import "config/placeholders";
+
+@import "~bootstrap/scss/bootstrap";
+
+@import "base/body";
+@import "base/btn";
+@import "base/section";
+
+@import "modules/counter";
+
+@import "layout/header";
+@import "layout/intro";
+@import "layout/training";
+@import "layout/master-class";

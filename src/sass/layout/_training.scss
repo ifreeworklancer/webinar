@@ -1,0 +1,31 @@
+#training {
+    padding: 80px 0;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        @extend %pos;
+        background: url('../images/icon/decor/pattern.png');
+        z-index: -4;
+    }
+}
+
+.traning-call {
+    position: relative;
+    padding: 35px 0 35px 50px;
+    z-index: 5;
+
+    &__title {
+        text-transform: uppercase;
+    }
+
+    &::before {
+        content: '';
+        @extend %pos;
+        right: -1000px;
+        background: #fff url('../images/icon/decor/pattern-decor.png');
+        box-shadow: 0px 18px 26px 12px rgba(21, 21, 21, 0.14);
+        z-index: -4;
+        transform: skew(-20deg);
+    }
+}

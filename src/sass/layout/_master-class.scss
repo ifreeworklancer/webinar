@@ -1,0 +1,45 @@
+#master-class {
+    padding: 160px 0 0;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        @extend %pos;
+        top: auto;
+        height: 20px;
+        background: $primary;
+    }
+}
+
+.master-class-item {
+
+    &__info {
+        font-size: 14px;
+    }
+
+    &__description {
+        position: relative;
+        font-weight: bold;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 12px;
+            left: -75px;
+            width: 50px;
+            height: 1px;
+            background: $primary;
+        }
+    }
+}
+
+.master-class-img {
+    @extend %pos;
+    @extend %img;
+    background-size: contain;
+    background-position: center bottom;
+
+    @media (max-width: map_get($grid-breakpoints, sm)) {
+        display: none;;
+    }
+}
