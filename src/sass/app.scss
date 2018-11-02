@@ -8,9 +8,16 @@
 @import "base/section";
 
 @import "modules/counter";
+@import "modules/modals";
+@import "modules/forms";
 
 @import "layout/header";
 @import "layout/intro";
 @import "layout/training";
 @import "layout/master-class";
 @import "layout/speaker";
+@import "layout/information";
+@import "layout/footer";
+
+@import "layout/page-singup";
+@import "layout/page-webinar";

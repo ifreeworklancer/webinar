@@ -1,0 +1,49 @@
+#app-footer {
+    background: #17212f;
+    position: relative;
+    z-index: 2;
+
+    @media (max-width: map_get($grid-breakpoints, sm)) {
+        padding-bottom: 30px;
+    }
+
+    .logo {
+        position: relative;
+        display: inline-block;
+        padding: 20px 0;
+
+        &::before {
+            content: '';
+            @extend %pos;
+            left: -20px;
+            right: -20px;
+            background: #fff;
+            box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.18);
+            z-index: -3;
+        }
+    }
+}
+
+.footer-nav {
+
+    @media (max-width: map_get($grid-breakpoints, sm)) {
+        margin-top: 30px;
+    }
+
+    &-list {
+
+        &-item {
+            color: #fff;
+            font-size: 14px;
+
+            &__link {
+                color: #fff;
+                font-size: 14px;
+
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+    }
+}

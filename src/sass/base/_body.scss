@@ -2,6 +2,10 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
+
+    &.page-webinar {
+        background: #eaf2ff;
+    }
 }
 
 h1 {

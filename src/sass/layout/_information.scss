@@ -1,0 +1,47 @@
+#information {
+    padding: 85px 0;
+    overflow: hidden;
+
+    .decor-border {
+        position: absolute;
+        top: 15px;
+        left: 100px;
+        right: 100px;
+        bottom: 20px;
+        border: 3px solid $primary;
+        z-index: -3;
+
+        @media (max-width: map_get($grid-breakpoints, sm)) {
+            display: none;
+        }
+    }
+
+    .decor-img {
+        position: absolute;
+        top: -50px;
+        left: -150px;
+
+        @media (max-width: map_get($grid-breakpoints, sm)) {
+            display: none;
+        }
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 70%;
+        right: 0;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 120px 660px 120px 0;
+        border-color: transparent #e5ebf5 transparent transparent;
+        z-index: -5;
+
+        @media (max-width: map_get($grid-breakpoints, lg)) {
+            left: 30%;
+            bottom: 20%;
+        }
+    }
+}

@@ -60,7 +60,7 @@
                 <div class="header-item-description text-center mb-2 mb-lg-0">
                     Мастер-класс для инфобизнесменов, коучей и экспертов
                 </div>
-                <a href="#" class="btn btn-outline-primary">Принять участие</a>
+                <a href="#" class="btn btn-outline-primary open-modal">Принять участие</a>
             </div>
         </div>
     </header>
@@ -99,8 +99,29 @@
                             </p>
 
                             <!-- Counter -->
+                            <div class="counter d-flex justify-content-between align-items-center mb-4">
+                                <div class="counter-item">
+                                    <div class="counter-item__value counter-item__value--day">00</div>
+                                    <div class="counter-item__name">дней</div>
+                                    <div class="counter-item__dot">:</div>
+                                </div>
+                                <div class="counter-item">
+                                    <div class="counter-item__value counter-item__value--hour">00</div>
+                                    <div class="counter-item__name">часов</div>
+                                    <div class="counter-item__dot">:</div>
+                                </div>
+                                <div class="counter-item">
+                                    <div class="counter-item__value counter-item__value--min">00</div>
+                                    <div class="counter-item__name">минут</div>
+                                    <div class="counter-item__dot">:</div>
+                                </div>
+                                <div class="counter-item">
+                                    <div class="counter-item__value counter-item__value--sec">00</div>
+                                    <div class="counter-item__name">секунд</div>
+                                </div>
+                            </div>
 
-                            <a href="#" class="btn btn-primary">
+                            <a href="book/Cialdini.pdf" download target="_blank" id="data-counter-btn" class="btn btn-primary">
                                 Получить технологию
                             </a>
                             <div class="bonus-item-info">
@@ -191,7 +212,7 @@
                                     24 октября, 19:00
                                 </div>
                             </div>
-                            <a href="#" class="btn btn-primary">
+                            <a href="#" class="btn btn-primary open-modal">
                                 ПРИНЯТЬ УЧАСТИЕ
                             </a>
                         </div>
@@ -292,10 +313,118 @@
             </div>
         </section>
 
+        <!-- Information -->
+        <section id="information">
+            <div class="container position-relative">
+                <div class="row flex-column justify-content-center align-items-center position-relative">
+                    <div class="col-sm-6 col-lg-5">
+                        <h2 class="section-title bg-white text-center">
+                            Чемпион Продаж с Вебинаров
+                        </h2>
+                    </div>
+                    <div class="col-sm-8 col-lg-6">
+                        <div class="information-description text-center my-4">
+                            Узнайте 9 элементов продающей презентации,
+                            <span class="font-weight-bold">чтобы конвертировать 30% аудитории в продажи</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 col-lg-4 col-xl-3 text-center bg-white">
+                        <a href="#" class="btn btn-primary open-modal">
+                            Получить технологию
+                        </a>
+                    </div>
+                    <div class="decor-border"></div>
+                </div>
+                <div class="decor-img"><img src="images/icon/decor/decor-mocap.png" alt=""></div>
+            </div>
+        </section>
+
     </main>
 
-    <footer id="app-footer">
+    <!-- Modal -->
+    <div class="modal">
+        <div class="modal-header">
+            <h2 class="modal-header__title">
+                ХОЧУ УЧАСТВОВАТЬ
+                В МАСТЕР КЛАССЕ
+            </h2>
+        </div>
+        <div class="modal-body">
+            <form id="form-modal" method="post">
+                <div class="form-row d-flex flex-column align-items-center">
+                    <div class="form-group position-relative">
+                        <label for="user-name--modal" class="label-placeholder position-absolute">
+                            Ваше имя
+                        </label>
+                        <input type="text" name="name" class="form-control position-relative" id="user-name--modal"
+                            required>
+                    </div>
+                    <div class="form-group position-relative">
+                        <label for="user-email--modal" class="label-placeholder position-absolute">
+                            Ваш EMAIL
+                        </label>
+                        <input type="email" name="email" class="form-control position-relative" id="user-email--modal"
+                            required>
+                    </div>
+                    <div class="form-group position-relative">
+                        <label for="user-phone--modal" class="label-placeholder position-absolute">
+                            Ваш номер телефона
+                        </label>
+                        <input type="tel" name="phone" class="form-control position-relative" id="user-phone--modal"
+                            required>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-primary">
+                        Да, я участвую
+                    </button>
+                </div>
+            </form>
+            <div class="modal-body__text mt-3 text-center">
+                100% защита даных от 3-х лиц
+            </div>
+        </div>
+        <div class="close-modal">
+            <div class="line line--left"></div>
+            <div class="line line--right"></div>
+        </div>
+    </div>
+    <div class="modal-mask"></div>
 
+    <footer id="app-footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-sm-3 col-lg-2">
+                    <a href="#" class="logo d-block">
+                        <div class="logo__img mx-auto" style="background-image: url('images/icon/logo/logo.png');"></div>
+                    </a>
+                </div>
+                <div class="col-sm-9 col-lg-10">
+                    <nav class="footer-nav">
+                        <ul class="footer-nav-list list-unstyled d-flex flex-column flex-lg-row justify-content-between align-items-center mb-0">
+                            <li class="footer-nav-list-item">
+                                Copyright © 2018. All rights reserved
+                            </li>
+                            <li class="footer-nav-list-item">
+                                <a href="#" class="footer-nav-list-item__link">
+                                    Политика конфиденциальности
+                                </a>
+                            </li>
+                            <li class="footer-nav-list-item">
+                                <a href="#" class="footer-nav-list-item__link">
+                                    Отказ от ответственности
+                                </a>
+                            </li>
+                            <li class="footer-nav-list-item">
+                                <a href="#" class="footer-nav-list-item__link">
+                                    Согласие с рассылкой
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <!-- Script -->

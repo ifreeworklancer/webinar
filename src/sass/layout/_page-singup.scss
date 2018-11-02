@@ -1,0 +1,58 @@
+#header-secondary {
+    @extend %pos;
+    bottom: auto;
+    padding-top: 15px;
+    z-index: 5;
+}
+
+#page-singup {
+    padding: 160px 0 160px;
+    min-height: 100vh;
+    background: url('../images/bg/singup-bg.jpg') 50% 50% /cover no-repeat;
+    overflow: hidden;
+}
+
+.page-singup-item {
+
+    &__name {
+        color: #daf4ed;
+    }
+}
+
+.page-singup-nav {
+    position: absolute;
+    width: 100%;
+    max-width: 1140px;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    padding: 15px 0;
+
+    &-list {
+
+        &-item {
+
+            @media (max-width: map_get($grid-breakpoints, sm)) {
+                margin-bottom: 15px;
+            }
+
+            &__link {
+                color: #fff;
+
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+    }
+
+    &::before {
+        content: '';
+        @extend %pos;
+        left: -100vw;
+        right: -100vw;
+        bottom: auto;
+        height: 1px;
+        background: rgba(#95aea9, .5);
+    }
+}

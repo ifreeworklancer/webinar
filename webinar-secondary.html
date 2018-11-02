@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Webinar</title>
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="dist/app.css">
+</head>
+
+<body class="page-webinar">
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="surprise-icon" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+            <path style="fill:#F44336;" d="M295.776,175.708h-79.584c-32.96,0-82.528-27.872-100.832-46.304
+	C89.6,103.452,89.6,61.18,115.392,35.228c25.056-25.216,68.768-25.216,93.856,0c13.856,13.952,50.656,70.624,45.6,108.448h2.272
+	c-5.056-37.824,31.744-94.496,45.632-108.448c25.024-25.216,68.736-25.28,93.856,0c25.824,25.952,25.824,68.192,0,94.144
+	C378.304,147.804,328.736,175.708,295.776,175.708z M295.776,143.708c22.112,0,64.352-22.976,78.112-36.864
+	c13.44-13.504,13.44-35.52,0-49.024c-12.992-13.088-35.552-13.024-48.48,0c-21.568,21.696-43.008,77.12-35.552,84.832
+	C289.888,142.652,291.232,143.708,295.776,143.708z M162.336,47.708c-9.152,0-17.76,3.584-24.256,10.112
+	c-13.408,13.504-13.408,35.52,0,49.024c13.792,13.888,56,36.864,78.112,36.864c4.576,0,5.92-1.024,5.92-1.024
+	c7.456-7.776-13.984-63.2-35.552-84.864C180.064,51.292,171.456,47.708,162.336,47.708z" />
+            <path style="fill:#FFC107;" d="M32,239.708v224c0,17.664,14.368,32,32,32h384c17.664,0,32-14.336,32-32v-224H32z" />
+            <path style="fill:#FFD54F;" d="M480,143.708H32c-17.632,0-32,14.368-32,32v80c0,8.832,7.168,16,16,16h480c8.832,0,16-7.168,16-16
+	v-80C512,158.044,497.664,143.708,480,143.708z" />
+            <rect x="224" y="143.708" style="fill:#F44336;" width="64" height="352" />
+        </symbol>
+
+        <symbol id="clock-icon" viewBox="0 0 97.16 97.16">
+            <path d="M48.58,0C21.793,0,0,21.793,0,48.58s21.793,48.58,48.58,48.58s48.58-21.793,48.58-48.58S75.367,0,48.58,0z M48.58,86.823    c-21.087,0-38.244-17.155-38.244-38.243S27.493,10.337,48.58,10.337S86.824,27.492,86.824,48.58S69.667,86.823,48.58,86.823z"
+                fill="#f9ac18" />
+            <path d="M73.898,47.08H52.066V20.83c0-2.209-1.791-4-4-4c-2.209,0-4,1.791-4,4v30.25c0,2.209,1.791,4,4,4h25.832    c2.209,0,4-1.791,4-4S76.107,47.08,73.898,47.08z"
+                fill="#f9ac18" />
+        </symbol>
+
+        <symbol id="calendar-icon" viewBox="0 0 124.813 124.813">
+            <path fill="#f9ac18" d="M48.083,80.355l-1.915,11.374c-0.261,1.555,0.377,3.122,1.65,4.05c1.275,0.926,2.968,1.05,4.361,0.32l10.226-5.338
+			L72.631,96.1c0.605,0.314,1.268,0.472,1.924,0.472c0.859,0,1.716-0.269,2.439-0.792c1.274-0.928,1.914-2.495,1.651-4.05
+			l-1.913-11.374l8.234-8.077c1.126-1.103,1.527-2.749,1.044-4.247c-0.485-1.497-1.783-2.593-3.341-2.823l-11.41-1.692
+			l-5.139-10.329c-0.697-1.41-2.141-2.303-3.716-2.303c-1.572,0-3.015,0.893-3.718,2.303l-5.134,10.329l-11.41,1.691
+			c-1.561,0.23-2.853,1.326-3.339,2.823c-0.486,1.498-0.086,3.146,1.042,4.247L48.083,80.355z" />
+            <path fill="#f9ac18" d="M111.443,13.269H98.378V6.022C98.378,2.696,95.682,0,92.355,0H91.4c-3.326,0-6.021,2.696-6.021,6.022v7.247H39.282V6.022
+			C39.282,2.696,36.586,0,33.261,0h-0.956c-3.326,0-6.021,2.696-6.021,6.022v7.247H13.371c-6.833,0-12.394,5.559-12.394,12.394
+			v86.757c0,6.831,5.561,12.394,12.394,12.394h98.073c6.832,0,12.394-5.562,12.394-12.394V25.663
+			C123.837,18.828,118.275,13.269,111.443,13.269z M109.826,110.803H14.988V43.268h94.838V110.803z" />
+        </symbol>
+
+    </svg>
+
+    <header id="header-webinar">
+        <div class="container bg-white py-3 mb-5 mt-3">
+            <div class="row align-items-center position-relative">
+                <div class="decor-triangle"></div>
+                <div class="col-lg-1">
+                </div>
+                <div class="col-lg-3">
+                    <div class="header-item d-flex flex-column flex-lg-row align-items-center">
+                        <svg width="45" height="45">
+                            <use xlink:href="#surprise-icon"></use>
+                        </svg>
+                        <div class="header-text header-text--big mx-auto ml-xl-3 px-0 px-xl-4">
+                            Скачай обещанный
+                            <span class="font-weight-bold">бонус</span> прямо сейчас
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="header-text font-weight-bold">
+                        Скачай Бонус:
+                    </div>
+                    <div class="header-text mt-0">
+                        Выдержки из книги Роберта
+                        Чалдини “Психология влияния”
+                    </div>
+                </div>
+                <div class="col-lg-2 text-center">
+                    <a href="book/Cialdini.pdf" class="btn btn-primary mt-3 mt-lg-0" download="">
+                        СКАЧАТЬ БОНУС
+                    </a>
+                </div>
+                <div class="col-lg-2">
+                    <div class="book-img" style="background-image: url('images/content/webinar/book.png');"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="webinar-description">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-10 col-lg-8 text-center mx-auto">
+                        <div class="webinar-description-item text-white">
+                            <h2 class="webinar-description-item__title text-uppercase px-0 px-xl-5">
+                                Поздравляю! Ты зарегистрирован!
+                                Скачай свой бонус, а также смотри видео,
+                                в котором ты узнаешь о <span class="text-primary">специальном предложении</span>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="page-webinar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="page-webinar-item">
+                            <div class="page-webinar-item-video">
+                                <div class="youtube" style="max-width: 600px;display: block;margin: 0 auto;">
+                                    <iframe width="640" height="270" style="width: 100% !important;" src="https://www.youtube.com/embed/HQxF9En8UPk?rel=0&amp;showinfo=0"
+                                        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="page-webinar-item-description">
+                                <div class="data d-flex justify-content-between align-items-start pb-3">
+                                    <div class="data-item">
+                                        <div class="data-item__title d-flex align-items-center">
+                                            <svg width="15" height="15" class="mr-2">
+                                                <use xlink:href="#calendar-icon"></use>
+                                            </svg>
+                                            Дата
+                                        </div>
+                                        <div class="data-item__value font-weight-bold ml-4">
+                                            24 октября 2018
+                                        </div>
+                                    </div>
+                                    <div class="data-item">
+                                        <div class="data-item__title d-flex align-items-center">
+                                            <svg width="15" height="15" class="mr-2">
+                                                <use xlink:href="#clock-icon"></use>
+                                            </svg>
+                                            Время
+                                        </div>
+                                        <div class="data-item__value font-weight-bold ml-4">
+                                            19:00 (Мск/Киев)
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="desription text-center mt-3">
+                                    Кликни по кнопке, чтобы добавить напоминание <br> в свой календарь о начале
+                                    мастер-класса:
+                                    <div class="b-hometext__btn mt-4">
+                                        <input type="hidden" class="ivent-text" value='Вебинар+"Чемпион+Продаж+с+Вебинаров"'>
+                                        <input type="hidden" class="ivent-details" value="Подключайся+к+трансляции+и+узнай+как+легко+продавать+свои+услуги,+и+знания+в+Stories,+YouTube,+Прямых Трансляциях+и+Вебинарах.+Убеждать+даже+самых+сложных+слушателей+и+конвертировать+30+процентов+аудитории+в+продажи.">
+                                        <input type="hidden" class="ivent-location" value="http://lp.applauseman.pro/land/bonus/1.php">
+                                        <input type="hidden" class="ivent-date" value="20181011T160000Z/20181011T170000Z">
+
+                                        <a href="#" class="btn btn-primary" target="_blank">Добавить напоминание</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <aside class="col-sm-6">
+                        <div class="b-hometext__bg">
+                            <div class="b-sidebar" style="margin-top:-40px;">
+                                <div class="b-sidebar__section">
+                                    <div id="hypercomments_widget"></div>
+                                    <script type="text/javascript">
+                                        _hcwp = window._hcwp || [];
+                                        _hcwp.push({
+                                            widget: "Stream",
+                                            widget_id: 104584
+                                        });
+                                        (function () {
+                                            if ("HC_LOAD_INIT" in window) return;
+                                            HC_LOAD_INIT = true;
+                                            var lang = (navigator.language || navigator.systemLanguage ||
+                                                navigator
+                                                .userLanguage || "en").substr(0, 2).toLowerCase();
+                                            var hcc = document.createElement("script");
+                                            hcc.type = "text/javascript";
+                                            hcc.async = true;
+                                            hcc.src = ("https:" == document.location.protocol ? "https" :
+                                                    "http") +
+                                                "://w.hypercomments.com/widget/hc/104584/" + lang +
+                                                "/widget.js";
+                                            var s = document.getElementsByTagName("script")[0];
+                                            s.parentNode.insertBefore(hcc, s.nextSibling);
+                                        })();
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="app-footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-sm-3 col-lg-2">
+                    <a href="#" class="logo d-block">
+                        <div class="logo__img mx-auto" style="background-image: url('images/icon/logo/logo.png');"></div>
+                    </a>
+                </div>
+                <div class="col-sm-9 col-lg-10">
+                    <nav class="footer-nav">
+                        <ul class="footer-nav-list list-unstyled d-flex flex-column flex-lg-row justify-content-between align-items-center mb-0">
+                            <li class="footer-nav-list-item">
+                                Copyright © 2018. All rights reserved
+                            </li>
+                            <li class="footer-nav-list-item">
+                                <a href="#" class="footer-nav-list-item__link">
+                                    Политика конфиденциальности
+                                </a>
+                            </li>
+                            <li class="footer-nav-list-item">
+                                <a href="#" class="footer-nav-list-item__link">
+                                    Отказ от ответственности
+                                </a>
+                            </li>
+                            <li class="footer-nav-list-item">
+                                <a href="#" class="footer-nav-list-item__link">
+                                    Согласие с рассылкой
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="dist/app.js"></script>
+</body>
+
+</html>

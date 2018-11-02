@@ -1,0 +1,103 @@
+#webinar-description {
+    margin-bottom: 10px;
+    padding: 50px 0;
+    background: url('../images/bg/webinar-description-bg.jpg') 50% 50% /cover no-repeat;
+
+    .webinar-description-item {
+
+        &__title {
+            line-height: 1.7;
+        }
+    }
+}
+
+#page-webinar {
+    margin-bottom: 20px;
+
+    .page-webinar-item {
+        background: #fff;
+
+        &-description {
+            padding: 25px 20px;
+
+
+            @media (max-width: map_get($grid-breakpoints, md)) {
+                margin-bottom: 20px;
+                padding: 25px 10px;
+            }
+
+            .data {
+                border-bottom: 1px solid #ebebeb;
+            }
+        }
+    }
+
+    .b-hometext__bg {
+        background: linear-gradient(to top, #F4F8FF 760.55px, #FFF 0%);
+        padding: 40px 0 0;
+    }
+
+    .b-sidebar {
+        margin-top: -40px;
+        max-width: 100%;
+        background-color: #FFF;
+        padding: 0;
+        text-align: center;
+        box-shadow: 0px 0px 32px 8px rgba(73, 96, 210, 0.25);
+        min-height: 700px;
+        max-height: 1000px;
+        overflow: auto;
+    }
+
+    .b-sidebar__section:first-child {
+        border-bottom: 1px dashed #dbdff6;
+    }
+
+}
+
+#header-webinar {
+    position: relative;
+
+    .decor-triangle {
+        @extend %pos;
+        top: -16px;
+        right: auto;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 50px 0 50px 50px;
+        border-color: transparent transparent transparent $dark;
+
+        @media (max-width: map_get($grid-breakpoints, md)) {
+            display: none;
+        }
+    }
+
+    .header-text {
+
+        @media (max-width: map_get($grid-breakpoints, md)) {
+            margin: 20px auto 0;
+            max-width: 250px;
+            text-align: center;
+        }
+
+        &--big {
+            font-size: 18px;
+        }
+    }
+
+    .book-img {
+        @extend %pos;
+        left: auto;
+        top: -45px;
+        width: 150px;
+        height: 150px;
+        @extend %img;
+
+        @media (max-width: map_get($grid-breakpoints, md)) {
+            position: relative;
+            top: 0;
+            margin: 0 auto;
+        }
+    }
+}

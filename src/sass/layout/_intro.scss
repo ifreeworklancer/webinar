@@ -81,6 +81,65 @@
         }
     }
 
+    .counter {
+        position: relative;
+
+        .counter-item {
+            position: relative;
+
+            &__value {
+                position: relative;
+                display: inline-block;
+                margin-bottom: 10px;
+                padding: 10px 13px;
+                background: #fff;
+                border-radius: 5px;
+                border: 1px solid #65828e;
+                font-size: 24px;
+                font-family: 'CenturyGothic' ,sans-serif;
+                font-weight: bold;
+                color: #65828e;
+                z-index: 4;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    right: 0;
+                    height: 1px;
+                    background: #ebebeb;
+                    z-index: 2;
+                }
+            }
+
+            &__dot {
+                position: absolute;
+                top: 30%;
+                right: -15px;
+                transform: translateY(-50%);
+                font-size: 24px;
+                font-family: 'CenturyGothic' ,sans-serif;
+                font-weight: bold;
+                color: #65828e;
+                z-index: 4;
+            }
+
+            &__name {
+                text-align: center;
+                font-size: 14px;
+                color: #65828e;
+            }   
+        }
+
+        .counter-name {
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+        }
+    }
+
     &-info {
         margin-top: 60px;
 
