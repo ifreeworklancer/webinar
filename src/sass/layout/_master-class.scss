@@ -9,6 +9,32 @@
         height: 20px;
         background: $primary;
     }
+
+    .decor-triangle {
+        position: absolute;
+
+        &--middle {
+            top: -100px;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 100px 0 100px 540px;
+            border-color: transparent transparent transparent #e5ebf5;
+            z-index: -2;
+        }
+
+        &--big {
+            top: 20%;
+            left: 20%;
+            right: 0;
+            bottom: 20px;
+            background: url('../images/icon/decor/decor-triangle--big.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            z-index: -2;
+        }
+    }
 }
 
 .master-class-item {
@@ -40,6 +66,7 @@
     background-position: center bottom;
 
     @media (max-width: map_get($grid-breakpoints, sm)) {
-        display: none;;
+        display: none;
+        ;
     }
 }

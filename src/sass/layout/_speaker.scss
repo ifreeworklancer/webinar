@@ -1,0 +1,36 @@
+#speaker {
+    padding: 100px 0 60px;
+    background: url('../images/bg/speaker-bg.jpg') 50% 50% /cover no-repeat;
+}
+
+.speaker-item {
+    margin: 0 auto 30px;
+    max-width: 180px;
+
+    &__img {
+        margin: 0 auto 20px;
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        box-shadow: 0px 15px 23px 11px rgba(0, 0, 0, 0.25);
+        @extend %img;
+    }
+
+    &__name {
+        position: relative;
+        text-align: center;
+        padding-bottom: 15px;
+        color: #fff;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 1px;
+            background: $primary;
+        }
+    }
+}
