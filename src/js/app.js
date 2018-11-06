@@ -2,6 +2,8 @@ import jquery from 'jquery';
 import ScrollReveal from 'scrollreveal'
 
 window.jQuery = window.$ = jquery;
+window.Popper = require('popper.js');
+require('bootstrap');
 
 
 
@@ -101,7 +103,7 @@ window.jQuery = window.$ = jquery;
 
                 clearInterval(intervalTimer);
 
-                // return;
+                return;
             }
 
 
