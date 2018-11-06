@@ -101,7 +101,7 @@ window.jQuery = window.$ = jquery;
 
                 clearInterval(intervalTimer);
 
-                return;
+                // return;
             }
 
 
