@@ -79,7 +79,7 @@ require('bootstrap');
         if (!!endDate) {
             end = endDate;
         } else {
-            end = localStorage.setItem('endDate', new Date().getTime() + 480000);
+            end = localStorage.setItem('endDate', new Date().getTime() + 86400000);
         }
 
         var _milisec = 1;
@@ -93,7 +93,6 @@ require('bootstrap');
             var distance = end - now;
 
             if ((new Date().getTime() > end)) {
-                $('#data-counter-btn').fadeOut();
 
                 $(".day").text("00");
                 $(".hour").text("00");
